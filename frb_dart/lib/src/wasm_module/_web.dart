@@ -7,7 +7,7 @@ import 'package:web/web.dart' as web;
 
 /// {@macro flutter_rust_bridge.internal}
 Future<void> initializeWasmModule({required String root}) async {
-  _ensureCrossOriginIsolated();
+  // _ensureCrossOriginIsolated();
 
   final script = web.HTMLScriptElement()..src = '$root.js';
   web.document.head!.append(script);
